@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <!-- Start Links CSS Files -->
+  <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- End Links CSS Files -->
+</head>
+<body>
+  <div class="container">
+    <div class="game show">
+      <div class="start-game">
+        <input type="text" placeholder="Enter Your Name">
+        <input type="button" value="Start Game">
+      </div>
+      <!-- Start Header -->
+      <div class="header">
+        <div class="icon">
+          <i class="fa-solid fa-palette art"></i>
+          <div class="colors hidden">
+            <span class="chose c3"></span>
+            <span class="c2"></span>
+            <span class="c1"></span>
+          </div>
+        </div>
+        <h1 class="name">Ahmed</h1>
+        <ul class="information">
+          <li>Opened<span class="opened">0</span></li>
+          <li>Closed<span class="closed">0</span></li>
+          <li>Mistake<span class="mistake">0</span></li>
+        </ul>
+        <div class="timer"><span class="hour">00</span>:<span class="minite">00</span>:<span class="scound">00</span></div>
+      </div>
+      <!-- End Header -->
+      <!-- Start Memory Game -->
+      <div class="content-memory-game">
+        <div class="end-game">
+          <div class="button">
+            <i class="fa-solid fa-rotate-right"></i>
+          </div>
+        </div>
+        <div class="memory-game ">
+          <div class="box" data-technolgy="i1">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-1.jpg" alt=""></div>
+          </div>
+          <div class="box" data-technolgy="i1">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-1.jpg" alt=""></div>
+          </div>
+  
+          <div class="box" data-technolgy="i2">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-2.png" alt=""></div>
+          </div>
+          <div class="box" data-technolgy="i2">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-2.png" alt=""></div>
+          </div>
+  
+          <div class="box" data-technolgy="i3">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-3.png" alt=""></div>
+          </div>
+          <div class="box" data-technolgy="i3">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-3.png" alt=""></div>
+          </div>
+  
+          <div class="box" data-technolgy="i4">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-4.png" alt=""></div>
+          </div>
+          <div class="box" data-technolgy="i4">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-4.png" alt=""></div>
+          </div>
+  
+          <div class="box" data-technolgy="i5">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-5.jpg" alt=""></div>
+          </div>
+          <div class="box" data-technolgy="i5">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-5.jpg" alt=""></div>
+          </div>
+  
+          <div class="box" data-technolgy="i6">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-6.png" alt=""></div>
+          </div>
+          <div class="box" data-technolgy="i6">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-6.png" alt=""></div>
+          </div>
+  
+          <div class="box" data-technolgy="i7">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-7.png" alt=""></div>
+          </div>
+          <div class="box" data-technolgy="i7">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-7.png" alt=""></div>
+          </div>
+  
+          <div class="box" data-technolgy="i8">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-8.png" alt=""></div>
+          </div>
+          <div class="box" data-technolgy="i8">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-8.png" alt=""></div>
+          </div>
+  
+          <div class="box" data-technolgy="i9">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-9.png" alt=""></div>
+          </div>
+          <div class="box" data-technolgy="i9">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-9.png" alt=""></div>
+          </div>
+  
+          <div class="box" data-technolgy="i10">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-10.png" alt=""></div>
+          </div>
+          <div class="box" data-technolgy="i10">
+            <div class="face front">?</div>
+            <div class="face back"><img src="img/img-10.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <!-- End Memory Game -->
+    </div>
+    <!-- Start List Gamers -->
+    <div class="list-game">
+      <div class="title">
+        <span class="name">Name</span>
+        <span>Time</span>
+        <span>Mistake</span>
+      </div>
+      <div class="content"></div>
+    </div>
+    <!-- End List Gamers -->
+  </div>
+  <!-- Start Sound  -->
+  <audio class="saccess" src="sound/mixkit-achievement-bell-600.wav"></audio>
+  <audio class="fail" src="sound/computer-error-meme-jam-fx-1-00-02.mp3"></audio>
+  <!-- Start Sound  -->
+
+  <!-- Start Links JS Files -->
+  <script src="js/main-minify.js"></script>
+  <!-- End Links JS Files -->
+</body>
+</html>
